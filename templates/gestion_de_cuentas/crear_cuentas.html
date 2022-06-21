@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CREACION DE CUENTAS</title>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/menu.js"></script>
+    <div id="head_dinamico"></div>
+    <script src="../../js/gestion_de_cuentas/crear_cuentas.js?v=<?php echo(rand()); ?>" type="text/javascript"></script>
+</head>
+<body class="fondoInicio color_formulario">
+    <div id="menu_iconos"></div>    
+    <div id="menu_dinamico"></div>    
+    <div class="container">
+        
+        <div class="row justify-content-start color_formulario">
+            
+        <form id="datos_usuario">
+            <div class="row justify-content-center">
+                <div class="padding_titulo"><p>DATOS DEL USUARIO</p></div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-lg-3">
+                    <div class="form-group">
+                        <label class="form-label labelBlancos">Tipo de documento</label>
+                        <select class="form-select" name="tipo_documento" id="tipo_documento" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="CC - CEDULA DE CIUDADANIA">CC - CEDULA DE CIUDADANIA</option>
+                            <option value="CE - CEDULA DE EXTRANJERIA">CE - CEDULA DE EXTRANJERIA</option>
+                            <option value="PA - PASAPORTE">PA - PASAPORTE</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3 col-lg-3">
+                    <div class="form-group">
+                        <label class="form-label">Numero de documento</label>
+                        <input type="text" class="form-control" name="numero_documento" id="numero_documento" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-lg-3">
+                    <div class="form-group">
+                        <label class="form-label">Primer nombre</label>
+                        <input type="text" class="form-control" name="primer_nombre" id="primer_nombre" required>
+                    </div>
+                </div>
+                <div class="mb-3 col-lg-3">
+                    <div class="form-group">
+                        <label class="form-label">Segundo Nombre</label>
+                        <input type="text" class="form-control" name="segundo_nombre" id="segundo_nombre">
+                    </div>
+                </div>
+                <div class="mb-3 col-lg-3">
+                    <div class="form-group">
+                        <label class="form-label">Primer apellido</label>
+                        <input type="text" class="form-control" name="primer_apellido" id="primer_apellido" required>
+                    </div>
+                </div>
+                <div class="mb-3 col-lg-3">
+                    <div class="form-group">
+                        <label class="form-label">Segundo Apellido</label>
+                        <input type="text" class="form-control" name="segundo_apellido" id="segundo_apellido">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-lg-3">
+                    <div class="form-group">
+                        <label class="form-label">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" name="fecha_nacimiento" id="fecha_nacimiento" required>
+                    </div>
+                </div>
+                <div class="mb-3 col-lg-3">
+                    <div class="form-group">
+                        <label class="form-label">Direccion</label>
+                        <input type="text" class="form-control" name="direccion" id="direccion" required>
+                    </div>
+                </div>
+                <div class="mb-3 col-lg-3">
+                    <div class="form-group">
+                        <label class="form-label">Numero de celular</label>
+                        <input type="text" class="form-control" name="telefono" id="telefono" required>
+                    </div>
+                </div>
+                <div class="mb-3 col-lg-3">
+                    <div class="form-group">
+                        <label class="form-label">Tipo de cuenta</label>
+                        <select class="form-select" name="tipo_cuenta" id="tipo_cuenta" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="Ahorros">Ahorros</option>
+                            <option value="Corriente">Corriente</option>
+                            <option value="Nomina">Nomina</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="mb-3 col-lg-3">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" id="btnsumit">Enviar Datos</button>
+                    </div>
+                </div>
+            </div>
+          </form>
+          </div>
+    </div>
+</body>
+</html>

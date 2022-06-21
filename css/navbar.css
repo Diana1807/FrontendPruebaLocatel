@@ -1,0 +1,11 @@
+body {
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+.bd-navbar {
+    padding: .75rem 0;
+    background-color: #7952b3;
+}

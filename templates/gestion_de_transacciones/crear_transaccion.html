@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TRANSACCIONES</title>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/menu.js"></script>
+    <div id="head_dinamico"></div>
+    <script src="../../js/gestion_de_transacciones/crear_transaccion.js?v=<?php echo(rand()); ?>" type="text/javascript"></script>
+</head>
+<body class="fondoInicio ">
+    <div id="menu_iconos"></div>    
+    <div id="menu_dinamico"></div>    
+    <div class="container">
+        
+        <div class="row justify-content-start color_formulario">
+            
+        <form name="datos_transaccion" id="datos_transaccion">
+            <div class="row justify-content-center">
+                <div class=" padding_titulo">DATOS DE LA TRANSACCION</div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-lg-3">
+                    <div class="form-group">
+                        <label class="form-label">Numero de cuenta</label>
+                        <input type="number" class="form-control" name="idCuenta" id="idCuenta" required>
+                    </div>
+                </div>
+                <div class="mb-3 col-lg-3" id="btn_validar">
+                    <div class="form-group">
+                        <input type="button" value="Validar Cuenta" class="btn btn-success" onclick="consultarCuenta();">
+                    </div>
+                </div>
+            </div>
+            <div id="div_transaccion" class="oculto">
+                <div class="row">
+                    <div class="mb-3 col-lg-3">
+                        <div class="form-group">
+                            <label class="form-label labelBlancos">Tipo de transaccion</label>
+                            <select class="form-select" name="tipoTransaccion" id="tipoTransaccion" onchange="mostrar_valor();" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="Consignacion">Consignacion</option>
+                                <option value="Retiro">Retiro</option>
+                                <option value="Consulta de saldo">Consulta de saldo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-lg-3 oculto" id="div_valor">
+                        <div class="form-group">
+                            <label class="form-label">Valor</label>
+                            <input type="number" class="form-control" name="valor" id="valor">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-lg-3">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </form>
+          </div>
+    </div>
+</body>
+</html>

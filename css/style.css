@@ -1,0 +1,112 @@
+.fondoInicio {
+    background-image: url('../img/imagen_sistema_financiero.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100%;
+}
+.fondoBlanco {
+    background-image: url('../img/imagen_sistema_financiero.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100%;
+}
+a:hover {
+    color: rgb(71, 168, 247) !important;
+  }
+
+.menu_activo{
+    font-weight: 700;
+}
+.padding_titulo{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align:center;
+}
+.subtitulo{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align:center;
+}
+.color_formulario{
+    /*background-color: rgba(255,255,255,0.5);*/
+    min-height: 100vh; 
+}
+.div_patalla_completa{
+    min-height: 100vh; 
+}
+
+label {
+    font-weight: 600;
+}
+
+.editar i {
+    margin-top: 10px;
+    margin-right: 8px;
+    color: Mediumslateblue;
+}
+
+.icono {
+    cursor: pointer;
+}
+
+.editar:hover i {
+    color: #32D949;
+}
+.eliminar i {
+    margin-top: 10px;
+    margin-right: 8px;
+    color: #E30613;
+}
+.eliminar:hover i {
+    color: #32D949;
+}
+.finalizar i {
+    margin-top: 10px;
+    margin-right: 8px;
+    color: #9405b8;
+}
+.finalizar:hover i {
+    color: #32D949;
+}
+.oculto {
+    display: none;
+}
+
+.colorTabla {
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.formulario {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, .56), 0 4px 25px 0 rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+}
+
+.fondoTabla {
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.padding_boton {
+    padding-top: 30px !important;
+}
+label{
+    color:black;
+    font-weight: 700;
+}
+
+#btn_validar{
+    padding-top: 32px;
+}

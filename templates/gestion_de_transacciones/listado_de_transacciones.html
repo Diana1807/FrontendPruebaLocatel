@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LISTADO DE TRANSACCIONES</title>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/menu.js"></script>
+    <script src="../../js/gestion_de_transacciones/listado_de_transacciones.js?v=<?php echo(rand()); ?>" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../../librerias/datatables/datatables.min.css"/>
+    <script type="text/javascript" src="../../librerias/datatables/datatables.min.js"></script>
+     <!--fecha-->
+     <script src="../../librerias/bootstrap-5.0.2-dist/moment.min.js" type="text/javascript"></script>
+     <script src="../../librerias/bootstrap-5.0.2-dist/daterangepicker.min.js" type="text/javascript"></script>
+     <!--fecha-->
+     <link rel="stylesheet" href="../../librerias/bootstrap-5.0.2-dist/bootstrap-select.min.css">
+     <script src="../../librerias/bootstrap-5.0.2-dist/bootstrap-select.min.js" type="text/javascript"></script>
+     <link rel="stylesheet" href="../../librerias/bootstrap-5.0.2-dist/daterangepicker.css">
+ 
+    <div id="head_dinamico"></div>
+</head>
+<body class="fondoInicio ">
+    <div id="menu_iconos"></div>    
+    <div id="menu_dinamico"></div>    
+    <div class="container">
+        <div class="row justify-content-start color_formulario">
+        <form class="">
+            <div class="row justify-content-center">
+                <div class=" padding_titulo">LISTADO DE TRANSACCIONES</div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-lg-3">
+                    <div class="form-group">
+                        <label class="form-label">Numero de cuenta</label>
+                        <input type="number" class="form-control" name="idCuenta" id="idCuenta" required>
+                    </div>
+                </div>
+                <div class="mb-3 col-lg-3" id="btn_validar">
+                    <div class="form-group">
+                        <input type="button" value="Validar Cuenta" class="btn btn-success" onclick="consultarTransaccionesCuenta();">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fondoTabla">
+                <table id="tabla_listado_transacciones" class="table table-striped table-bordered dt-responsive" style="width:100%">
+                </table>
+            </div>
+          </form>
+        </div>
+    </div>
+</body>
+<script src="../../librerias/datatables/Bootstrap-5-5.0.1/js/bootstrap.bundle.min.js"></script>
+</html>
